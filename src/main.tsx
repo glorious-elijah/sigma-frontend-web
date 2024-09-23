@@ -9,9 +9,9 @@ const client = new ApolloClient({
 });
 
 createRoot(document.getElementById("root")!).render(
-  <ApolloProvider client={client}>
-    <StrictMode>
+  <StrictMode>
+    <ApolloProvider client={client}>
       <App />
-    </StrictMode>
-  </ApolloProvider>
+    </ApolloProvider>
+  </StrictMode>
 );
